@@ -1,0 +1,24 @@
+import java.util.*;
+class PalindromString 
+{
+	public static void main(String[] args) 
+	{
+		Scanner scan = new Scanner(System.in);
+		System.out.print("Enterr the String to find Palindrom : ");
+		String ori = scan.nextLine();
+		String rev = "";
+		int len = ori.length();
+		for (int i=len-1;i>=0;i--)
+		{
+			rev = rev + ori.charAt(i);
+		}
+		if (rev.equals(ori))
+		{
+			System.out.println("Palindrom String..."+rev);
+		}
+		else
+		{
+			System.out.println("Not Palindrom String....."+rev);
+		}
+	}
+}
